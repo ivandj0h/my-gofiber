@@ -1,8 +1,9 @@
-package my_gofiber
+package main
 
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/ivandi1980/my-gofiber/models"
+	"github.com/ivandi1980/my-gofiber/service"
 	"github.com/ivandi1980/my-gofiber/storage"
 	"github.com/joho/godotenv"
 	"log"
@@ -19,7 +20,7 @@ func main() {
 		Host:     os.Getenv("DB_HOST"),
 		Port:     os.Getenv("DB_PORT"),
 		Password: os.Getenv("DB_PASSWORD"),
-		User:     os.Getenv("DB_USER"),
+		User:     os.Getenv("DB_USERNAME"),
 		DBName:   os.Getenv("DB_NAME"),
 		SSLMode:  os.Getenv("DB_SSLMODE"),
 	}
