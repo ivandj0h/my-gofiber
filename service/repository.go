@@ -9,9 +9,9 @@ import (
 )
 
 type Book struct {
-	Author    string `json:"author" validate:"required"`
-	Title     string `json:"title" validate:"required"`
-	Publisher string `json:"publisher" validate:"required"`
+	Author    string `json:"author"`
+	Title     string `json:"title"`
+	Publisher string `json:"publisher"`
 }
 
 type Repository struct {
